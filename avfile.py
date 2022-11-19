@@ -1,0 +1,28 @@
+i=int(input("Enter The Order Of Determinant You Want is "))
+if i==1:
+	a11=int(input("enter A¹¹"))
+	print("|",a11,"|","=",0)
+elif i==2:
+	a11=int(input("enter A¹¹ = "))
+	a12=int(input("enter A¹² = "))
+	a21=int(input("enter A²¹ = "))
+	a22=int(input("enter A²² = "))
+	print("|",a11,a12,"|")
+	print("|",a21,a22,"|")
+	print("\n=", a11*((a11*a22)-(a21*a12)))
+elif i==3:
+	a11=int(input("enter A¹¹ = "))
+	a12=int(input("enter A¹² = "))
+	a13=int(input("enter A¹³ = "))
+	a21=int(input("enter A²¹ = "))
+	a22=int(input("enter A²² = "))
+	a23=int(input("enter A²³ = "))
+	a31=int(input("enter A³¹ = "))
+	a32=int(input("enter A³² = "))
+	a33=int(input("enter A³³ = "))
+	print("|",a11,a12,a13,"|")
+	print("|",a21,a22,a23,"|")
+	print("|",a31,a32,a33,"|")
+	print( "\n=",a11*((a22*a33)-(a32*a23))+(-1 *(a12*((a21*a33)-(a31*a23))))+(a13*((a21*a32)-(a31*a22))))
+else:
+	print("Enter the order less than 3 and more than 0")
